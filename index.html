@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links below: -->
+    <article>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav-bar.css">
+        <link rel="stylesheet" href="header.css">
+      <link rel="stylesheet" href="body.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="buttons.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+    </article>
+    <title>Undoo | My CV</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+      <a href="index.html" ><img src="https://media.discordapp.net/attachments/1111602646743265324/1111651222802411590/x.jpg?width=530&height=612" alt="" class="avatar"></a>
+      <h1 id="symbol"><i>&#60;/&#62;</i></h1>
+      <h1 id="main-title">Welcome aboard!</h1>
+      <h2 id="name">Culcer Robert</h1>
+      <text id="bio"><br><i id="smaller-text">/*FastTrackIT Student*/</i><br><i id="smaller-text">/*Amateur Web Developer*/</i></text>
+  
+      <div class="pill"></div>
+      </div>
+    </header>
+    <nav class="nav-bar">
+      <center>
+        <ul class="nav-ul">
+          <li onclick="openContent(event, 'projects')" class="nav-list">
+            <a href="#" id="projects-item" class="nav-link">About Me</a>
+          </li>
+          <li onclick="openContent(event, 'experience')" class="nav-list">
+            <a href="#" id="experience-item" class="nav-link">Skills</a>
+          </li>
+          <li onclick="openContent(event, 'skills')" class="nav-list">
+            <a href="#" id="skills-item" class="nav-link">Languages</a>
+          </li>
+          <li onclick="openContent(event, 'homework')" class="nav-list">
+            <a href="./homework.html" id="homework-item" class="nav-link">Homework</a>
+          </li>
+          <li class="dropdown nav-list">
+            <a href="#" id="uselinks-item" class="nav-link" onclick="toggleDropdown(event)">Useful Links</a>
+            <ul class="dropdown-menu" id="uselinks-dropdown">
+              <li><a href="https://github.com/andu1337" style="color: white;" target="_blank">GitHub</a></li>
+              <li><a href="#" style="color: white;" target="_blank">LinkedIn</a></li>
+              <li><a href="https://fasttrackit.org/" style="color: white;" target="_blank">FastTrackIT</a></li>
+            </ul>
+          </li>
+          <li onclick="openContent(event, 'chatbot')" class="nav-list">
+            <a href="./chat.html"><img src="images/chatbot.png" id="chatbot-img" alt=""><a href="./chat.html" id="chatbot-item" class="nav-link">NEW! Chat Bot 1.0</a>
+          </li>
+        </ul>
+      </center>
+    </nav>
+    
+    <script>
+      function toggleDropdown(event) {
+        event.preventDefault();
+        var dropdown = document.getElementById("uselinks-dropdown");
+        dropdown.classList.toggle("show");
+      }
+window.onload = function() {
+    document.getElementById("projects").style.display = "block";
+  };
+
+      function openContent(event, contentId) {
+        var i, contents;
+        contents = document.getElementsByClassName("content");
+        for (i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+        }
+        document.getElementById(contentId).style.display = "block";
+      }
+    </script>
+    
+    <div id="projects" class="content" style="color: white; display: none;">
+      Sup, guys?
+I'm Culcer Robert, a 26 year old man on a mission to conquer the world of programming.<br>
+Yep, you heard it right im diving headfirst into this coding gig eager<br> to soak up every bit of knowledge I can get my hands on.
+    </div>
+    <div id="experience" class="content" style="color: white; display: none;">
+      <h2> Cunostintele mele</h2>
+      <b for="file">Cunostinte in HTML:</b>
+<progress id="file" value="42" max="100"> 42% </progress><br>
+      <b for="file">Cunostinte in CSS:</b>
+<progress id="file" value="39" max="100"> 39% </progress><br>
+      <b for="file">Cunostinte in JS:</b>
+<progress id="file" value="24" max="100"> 24% </progress>
+    </div>
+    <div id="skills" class="content" style="color: white; display: none;">
+    <h2>Known Languages</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Romanian</td>
+          <td>Native or bilingual proficiency</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Professional working proficiency</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Full professional proficiency</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Full professional proficiency</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <hr>
+      <footer class="footer">
+        <h1 class="top"><a href="#top">Back to top &uarr; <font size="3">&nbsp;</font></a></h1>	
+        <a href="https://fasttrackit.org" target="_blank"><img src="images/ftit2.png" id="ftit-logo"></a>
+        <h2 id="ftit-desc"><a href="https://fasttrackit.org" target="_blank">⚪ FastTrackIT</a></h2>
+        <!-- <h2 id="separator">/</h2> -->
+
+        <a href="https://github.com/andu1337"><img src="images/github-logo.png" id="github-logo"></a>
+        <h2 id="github"><a href="https://github.com/andu1337" target="_blank">⚫ GitHub</a></h2>
+
+        <h3 id="lorem2"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure ratione minus sit maxime ullam labore dolore, aspernatur temporibus consectetur cupiditate possimus dolores suscipit rerum illum blanditiis, saepe omnis numquam.
+        Atque quia porro doloremque. Deleniti nostrum enim molestiae beatae cupiditate modi et. Assumenda et totam labore at suscipit sunt repudiandae maxime, ratione natus nemo cumque minus rem expedita odit dolore?
+        Est quasi quam necessitatibus, quidem esse nam iure consectetur impedit architecto accusamus, porro, fuga sapiente quia officia aspernatur possimus nostrum enim. Aliquam possimus ad laudantium qui autem. Deserunt, sint minus.
+        Maiores quos cumque voluptatum tenetur fugit sapiente nesciunt quam reiciendis placeat, ab iure corporis! Amet, sint ratione doloremque maiores ex earum vitae vel quibusdam quae explicabo, repudiandae odit totam dicta.
+        Cupiditate natus quis illo laborum pariatur doloribus eligendi explicabo animi. Aliquid cum nam, tempore eius adipisci officiis minima quos numquam, natus voluptatem doloribus placeat ut dignissimos est illo? Libero, ratione.</i></h4>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

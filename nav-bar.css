@@ -1,0 +1,70 @@
+.nav-bar {
+    background-color: pink;
+    position: relative;
+    top: -8px;
+    left: %;
+    padding-right: 10px black;
+    padding: 0 16px 0 16px black;
+}
+
+nav-ul {
+    margin: 0;
+    padding: auto;
+}
+
+ul.nav-ul {
+    display: flex;
+    padding-left: 0;
+    padding: auto;
+    margin: auto;
+}
+
+.nav-list {
+    display:inline;
+    padding: 0px 25px 0px 25x;
+    width: 100%;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 2px;
+}
+
+#projects-item, #experience-item, #skills-item, #homework-item, #uselinks-item {
+    color: #8bdf90;
+    position: relative;
+    top: 5px;
+}
+
+#projects-item:hover, #experience-item:hover, #skills-item:hover, #homework-item:hover, #uselinks-item:hover {
+    color: rgb(31, 184, 113);
+}
+
+#projects-item:active, #experience-item:active, #skills-item:active, #homework-item:active, #uselinks-item:active {
+    color: #ac9ff3;
+}
+
+#chatbot-item {
+    position: relative;
+    top: -5px;
+    color: #f0f39f;
+}
+
+#chatbot-item:hover {
+    font-weight: 600;
+}
+
+#chatbot-item:active {
+    font-weight: bold;
+    color: #f3f39f;
+    transform: scale(2.5);
+    transition: 100ms;
+}
+
+#chatbot-img {
+    position: relative;
+    top: 1.5px;
+    width: 22px;
+    height: 23px;
+    margin: 0 5px 0 0;
+}

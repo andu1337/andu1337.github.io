@@ -1,0 +1,36 @@
+html {
+    width: 100%;
+    height: 100%;
+    zoom: 140%;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  :-moz-placeholder {
+    font-style: italic;  
+  }
+  ::-moz-placeholder {
+    font-style: italic;  
+  }
+  :-ms-input-placeholder {  
+    font-style: italic; 
+  }
+
+  input .search-query {
+    background-color:#f47443;
+    color:rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
