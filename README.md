@@ -1,4 +1,4 @@
 # cv
+My personal CV made with HTML, CSS and JS.
 https://andu1337.github.io/cv/
-
-^The link for the live page of my Curriculum Vitae for FastTrackIT.
+Live Preview of my Curriculum Vitae for FastTrackIT.
